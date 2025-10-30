@@ -1,0 +1,8 @@
+#ifndef BALTAM_BEX_CONFIG_H
+#define BALTAM_BEX_CONFIG_H
+
+#define BEX_API_VERSION_MAJOR 3
+#define BEX_API_VERSION_MINOR 8
+
+#endif
+
