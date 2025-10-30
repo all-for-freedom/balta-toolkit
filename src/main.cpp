@@ -1,9 +1,7 @@
 /*
  * 北太天元(Baltamatica)t-SNE 插件主文件。
- * 适用于 v4.1 版本的北太天元。
+ * 适用于 v4.2 版本的北太天元。
  *
- * ngrid 函数:
- *   [dm, ds] = ngrid(A, B)
  */
 
 #include "bex/bex.hpp"
@@ -63,5 +61,5 @@ bexfun_info_t * bxPluginFunctions(){
  */
 
 void isPositiveDefinite(int nlhs, bxArray *plhs[], int nrhs, const bxArray *prhs[]){
-    
+
 }
