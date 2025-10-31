@@ -7,12 +7,12 @@
 #include "bex/bex.hpp"
 
 using namespace baltam;
-#define PLUGIN_NAME "self_use"
+#define PLUGIN_NAME "balta_toolkit"
 
-void isPositiveDefinite(int, bxArray*[], int, const bxArray*[]);
+void isposdef(int, bxArray*[], int, const bxArray*[]);
 
-static const char * isPositiveDefinite_help = R"(
-    这是一个模板文件
+static const char * isposdef_help = R"(
+    判断一个矩阵是否正定。
 )";
 
 /**
@@ -47,7 +47,7 @@ int bxPluginFini(){ return 0; }
  *
  */
 static bexfun_info_t flist[] = {
-    {"isPositiveDefinite", isPositiveDefinite, isPositiveDefinite_help},
+    {"isposdef", isposdef, isposdef_help},
     {"", nullptr, nullptr},
 };
 
@@ -60,6 +60,6 @@ bexfun_info_t * bxPluginFunctions(){
  * 
  */
 
-void isPositiveDefinite(int nlhs, bxArray *plhs[], int nrhs, const bxArray *prhs[]){
-
+void isposdef(int nlhs, bxArray *plhs[], int nrhs, const bxArray *prhs[]){
+    
 }

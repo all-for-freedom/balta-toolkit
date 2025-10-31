@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(self_use)
+project(balta_toolkit)
 
 # 搜索 src/ 目录里的所有 cpp
 file(GLOB_RECURSE PLUGIN_SOURCE src/*.cpp)
