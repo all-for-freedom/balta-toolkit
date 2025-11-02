@@ -28,10 +28,10 @@ set_target_properties(bex PROPERTIES
     IMPORTED_IMPLIB ${PROJECT_SOURCE_DIR}/include/lib/libbex.dll.a
 )
 
-## 这里链接第三方库
-# target_include_directories(${PROJECT_NAME} PRIVATE 
-# 
-# )
+# 这里链接库 eigen
+target_include_directories(${PROJECT_NAME} PRIVATE 
+    ${PROJECT_SOURCE_DIR}/third_party/Eigen
+)
 
 # 链接到你的插件
 target_link_libraries(${PROJECT_NAME} bex)
