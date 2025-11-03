@@ -1,1 +1,0 @@
- "C:/MSYS2_MinGW64/msys64-20240718/00-self-demo/mathematics/self-use/include/lib/libbex.dll.a" -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
