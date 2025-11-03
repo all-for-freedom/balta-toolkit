@@ -1,0 +1,3 @@
+C:/MSYS2_MinGW64/msys64-20240718/00-self-demo/mathematics/self-use/build/CMakeFiles/balta_toolkit.dir
+C:/MSYS2_MinGW64/msys64-20240718/00-self-demo/mathematics/self-use/build/CMakeFiles/edit_cache.dir
+C:/MSYS2_MinGW64/msys64-20240718/00-self-demo/mathematics/self-use/build/CMakeFiles/rebuild_cache.dir

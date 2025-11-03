@@ -5,7 +5,7 @@
  */
 
 #include "bex/bex.hpp"
-#include "balta_toolkit.hpp"
+#include "balta_toolkit/balta_toolkit.hpp"
 
 using namespace baltam;
 #define PLUGIN_NAME "balta_toolkit"
@@ -63,6 +63,9 @@ bexfun_info_t * bxPluginFunctions(){
 
 void isposdef(int nlhs, bxArray *plhs[], int nrhs, const bxArray *prhs[]){
 
-    
+    const double* matrix = bxGetDoublesRO(prhs[0]);
+    const int row = bxGetM(prhs[0]);
+    bool flag = balta_toolkit::math_utils::isposdef(matrix, row);
+    plhs[0] = bxCreateLogicalScalar(flag);
 
 }

@@ -4,5 +4,5 @@
  */
 
 namespace balta_toolkit::math_utils{
-    bool isposdef(double* matrix);
+    bool isposdef(const double* matrix, const int row);
 }
