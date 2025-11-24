@@ -13,7 +13,7 @@ bool isposdef(const double* matrix, const int row){
     using namespace Eigen;
     if (!matrix || row <= 0) return false;
 
-    // Map 列主序矩阵（零拷贝）
+    // Map 列主序矩阵
     Map<const Matrix<double, Dynamic, Dynamic, ColMajor>> A(matrix, row, row);
 
     // 检查是否存在 NaN/Inf
@@ -26,11 +26,6 @@ bool isposdef(const double* matrix, const int row){
     LLT<MatrixXd> llt(S);
     if (llt.info() == Success)
         return true;
-
-    // 如果想允许“半正定”通过，可改用 LDLT 并检查最小特征值
-    // LDLT<MatrixXd> ldlt(S);
-    // auto diag = ldlt.vectorD();
-    // return (diag.minCoeff() > -1e-12);
 
     return false;
 }
